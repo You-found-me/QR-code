@@ -3,22 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre de Scan - Raphaël</title>
-    <!-- Script GoatCounter pour ton pull -->
+    <title>Message - Raphaël</title>
+    <!-- Script GoatCounter -->
     <script data-goatcounter="https://mon-comptage-qr-code.goatcounter.com/count"
             data-goatcounter-settings='{"path": "/raphael"}'
             async src="//gc.zgo.at/count.js"></script>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 40px 20px; background: #f9f9f9; }
-        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 500px; margin: auto; }
-        h1 { color: #333; }
-        p { color: #555; line-height: 1.6; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #121212 0%, #24243e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #ffffff;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            padding: 35px 25px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        .avatar {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            background: linear-gradient(45deg, #ff7675, #fd79a8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .english-text {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #f1f2f6;
+            margin-bottom: 20px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 18px;
+            border-radius: 16px;
+            border-left: 4px solid #fd79a8;
+        }
+        .japanese-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #dfe6e9;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 14px;
+            font-weight: bold;
+            font-size: 1.05rem;
+            box-shadow: 0 8px 20px rgba(220, 39, 67, 0.3);
+            transition: transform 0.2s;
+        }
+        .btn:active { transform: scale(0.98); }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>Raphaël</h1>
-        <p>Ton message personnalisé ici !</p>
+        <div class="avatar">🌸 ⛩️</div>
+        <h1>Bonjour ! 👋</h1>
+        
+        <div class="english-text">
+            Congrats, you found the secret message! 🌸<br><br>
+            We're traveling around Japan and looking for cool people to grab a drink or chat with 🍻<br><br>
+            Start the conversation by guessing which country we're from — if you're right, the first round is on us! 🍹🎯
+        </div>
+
+        <div class="japanese-text">
+            日本が大好きです！初めての旅行です 🇯🇵✨
+        </div>
+        
+        <a href="https://instagram.com/ra.fifou" class="btn" target="_blank">Say hi on Instagram 💬</a>
     </div>
 </body>
 </html>
