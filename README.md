@@ -1,0 +1,2 @@
+# japon
+Nombre-code-QR
